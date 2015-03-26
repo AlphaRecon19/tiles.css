@@ -1,0 +1,113 @@
+/* tiles.css */
+.tiles{
+    margin-left: 0px;
+    max-width: 100% !important;
+}
+.tile > a,
+.tiles > a{
+    text-decoration: none;
+}
+.tile {
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    padding-top: 20px;
+    margin: 20px;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -webkit-box-shadow: 10px 10px 15px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 15px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 15px -9px rgba(0,0,0,0.75);
+    border: 3px solid #7a7a7a;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+.tile:hover{
+    transform: scale(1.2);
+    margin-right: 20px;
+    cursor: pointer;
+}
+.tile-nolink{
+    cursor: default !important;
+}
+.tile > .tile-icon{
+    text-align: center;
+    margin: 0 auto;
+}
+.tile > .tile-title{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.tile > .tile-number {
+    top: -4px;
+    position: absolute;
+    right: -4px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: red;
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+/* Tile colours */
+.tile-blue {
+    background-color: #2D4671;
+}
+
+.tile-green {
+    background-color: #2BA000;
+}
+
+.tile-red {
+    background-color: #B13B3B;
+}
+
+.tile-purple {
+    background-color: #5C2C76;
+}
+
+.tile-orange {
+    background-color: #FF7400;
+}
+.tile-white{
+    color: #7a7a7a;
+}
+
+/* Responsiveness */
+@media(min-width: 992px){/* Desktop */
+    .tiles{
+        width:100%;
+        text-align:center;
+        padding-bottom: 10px;
+    }
+    .tile{
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+    }
+    .tile-title.tile-onlytext {
+        margin-top: 70px;
+        vertical-align: middle;
+    }
+
+}
+@media(max-width: 991px){/* Mobile */
+    .tiles{
+        margin-top: -10px;
+    }
+    .tile {
+        width: auto !important;
+    }
+    .tile:hover{
+        transform: scale(1.1);
+    }
+
+}
