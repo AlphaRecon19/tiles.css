@@ -48,6 +48,13 @@
     line-height: 100%;
 }
 
+.tile > .tile-text{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 100%;
+}
+
 .tile > .tile-number {
     top: -4px;
     position: absolute;
@@ -99,7 +106,7 @@
         vertical-align: middle;
         float: none;
     }
-    .tile-title.tile-onlytext {
+    .tile > .tile-onlytext {
         margin-top: 70px;
         vertical-align: middle;
     }
