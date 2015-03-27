@@ -118,7 +118,7 @@
     }
 
 }
-@media(min-width: 769px){/* Tablet */
+@media(min-width: 769px) and (max-width: 991px){/* Tablet */
     .tiles{
         margin-top: -10px;
         margin-left: 12%;
