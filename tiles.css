@@ -3,6 +3,7 @@
     margin-left: 0px;
     max-width: 100% !important;
 }
+
 .tile > a,
 .tiles > a{
     text-decoration: none;
@@ -29,18 +30,22 @@
     color: white;
     transition: all .2s ease-in-out;
 }
+
 .tile:hover{
     transform: scale(1.2);
     margin-right: 20px;
     cursor: pointer;
 }
+
 .tile-nolink{
     cursor: default !important;
 }
+
 .tile > .tile-icon{
     text-align: center;
     margin: 0 auto;
 }
+
 .tile > .tile-title{
     text-align: center;
     padding-top: 10px;
@@ -90,6 +95,7 @@
 .tile-orange {
     background-color: #FF7400;
 }
+
 .tile-white{
     color: #7a7a7a;
 }
@@ -112,12 +118,15 @@
     }
 
 }
-@media(max-width: 991px){/* Mobile */
+@media(min-width: 769px){/* Tablet */
     .tiles{
         margin-top: -10px;
+        margin-left: 12%;
+        text-align: center;
     }
     .tile {
-        width: auto !important;
+        display: inline-block;
+        float: left;
     }
     .tile:hover{
         transform: scale(1.1);
@@ -128,4 +137,21 @@
         margin: 0 auto;
     }
 
+}
+@media(max-width: 768px){/* Mobile */
+    .tiles{
+        margin-top: -10px;
+    }
+    .tile {
+        width: auto !important;
+        min-width: 40%;
+    }
+    .tile:hover{
+        transform: scale(1.1);
+    }
+    .tile > img.tile-image{
+        max-height: 70%;
+        display: block;
+        margin: 0 auto;
+    }
 }
